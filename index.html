@@ -1,0 +1,49 @@
+    <!DOCTYPE html>
+    <head>
+        <title>Rock Paper Scissor Game</title>
+        <!--Fontawesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+        <!--Google Font-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <!--Stylesheet-->
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="container-fluid">
+            <header>
+            <h2>Rock Paper Scissor</h2>
+        </header>
+            <section id="score_board">
+                <div class="badge" id="comp_label">Computer</div>
+                <div class="badge" id="user_label">User</div>
+                <span id="user_score">0</span> : <span id="computer_score">0</span>
+            </section>
+            <div class="result">
+                <p id="round_result"></p>
+                <div id="round_result_Button"><button type="button" class="btn btn-primary" name="reset" value="reset" id="reset">Reset</button></div>
+                <p id="result_text">To begin choose one from Rock , Paper or Scissor</p>
+            </div>
+            <div class="choices">
+                <div class="choice" id="rock" value="1">
+                    <img src="./images/rock.png" alt="" value="1" width="150" height="150"  >
+                </div>
+                <div class="choice" id="paper" value="2">
+                    <img src="./images/paper.png" alt="" value="2"  width="150" height="150"  >
+                </div>
+                <div class="choice" id="scissor" value="3">
+                    <img src="./images/scissor.png" alt="" value="3"  width="150" height="150"  >
+                </div>
+            </div>
+            <div class="table_container mt-5">
+               
+               <button type="button" class="btn btn-primary" id="show_result">Show Match History</button>
+               <p id="match_history">Macth History</p>
+            </div>
+            
+        </div>
+        <script src="script.js">
+        </script>
+</body>
+    </html>
